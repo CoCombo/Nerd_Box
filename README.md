@@ -1,2 +1,4 @@
 # Nerd_Box
-Nerd-Gamer-JHQLover
+Welcome!
+Call me Combo.
+I'm a Nerd-Gamer-JHQLover.
