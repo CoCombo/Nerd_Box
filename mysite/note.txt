@@ -1,0 +1,4 @@
+#Django note
+匹配url时，url(r'^$')表示空
+每次更新model都要进行以下操作：python manage.py makemigrations appname,python manage.py migrate
+IdentationError缩进错误

@@ -1,4 +1,7 @@
 <!DICTYPE html>
+
+{% load static %}
+
 <html>
 	
 	<head>
@@ -6,8 +9,18 @@
 	</head>
 	
 	<body>
-		<h1>Combo says..</h1><br />
+		<h1>Combo says..</h1>
+
+		{% if categories %}
+			<ul>
+				{% for category in categories%}
+				<li>{{ category.name }}</li>
+				{% endfor %}
+			</ul>
+		{% endif %}
 		hello.<strong>{{ boldmessage }}</strong><br />
+		<a href = "/combo/shit/">SHIT</a><br />
+		<img src = "{% static "images/darksouls.jpg" %}" alt = "picture of combo"/>
 	</body>
 	
 </html>
