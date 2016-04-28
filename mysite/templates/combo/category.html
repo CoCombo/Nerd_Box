@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Combo</title>
+	</head>
+	
+	<body>
+		{% if category %}
+		<h1>{{ category_name }}</h1>
+			{% if pages %}
+			<ul>
+				{% for page in pages %}
+				<li><a href="/combo/category/{{ category.url }}">{{ page.title }}</a></li>
+				{% endfor %}
+			</ul>
+			{% else %}
+				<strong>no pages currently in category.</strong>
+			{% endif %}
+		{% else %}
+			the specified category {{ category_name }} does not exist!
+		{% endif %}
+	</body>
+</html>

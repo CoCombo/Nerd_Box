@@ -15,7 +15,7 @@ def shit(request):
 	return render(request, 'combo/shit.html', context_dict)
 	#return HttpResponse("bull shit.")
 
-def combo(request, category_name_slug):
+def category(request, category_name_slug):
 	context_dict = {}
 	
 	try:
@@ -25,4 +25,8 @@ def combo(request, category_name_slug):
 		pages = Page.objects.filter(category = category)
 		
 		context_dict['pages'] = pages
-		context
+		context_dict['category'] = category
+	except 	Category.DoesNotExist:
+		pass
+		
+	return render(request, 'combo/category.html', context_dict)
