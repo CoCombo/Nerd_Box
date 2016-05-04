@@ -2,3 +2,26 @@
 匹配url时，url(r'^$')表示空
 每次更新model都要进行以下操作：python manage.py makemigrations appname,python manage.py migrate
 IdentationError缩进错误
+
+#安装python
+下载python source code
+~$./configure
+~$ make
+~$ sudo make install
+#安装pip
+~$ sudo get-apt install python-pip
+#安装diango，安装后测试版本
+~$ pip install -U django==1.7(所需版本号)
+~$ python -c "import django; print (django.get_version())"
+
+#启动django server时出错
+1.no module named zlib.
+sudo apt-get install zlib1g-dev
+重复上述python的安装步骤
+
+2.no module named _sqlite3
+sudo apt-get install libsqlite3-dev
+pip install pysqlite
+重复上述python安装步骤
+
+
