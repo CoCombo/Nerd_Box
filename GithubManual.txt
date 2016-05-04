@@ -1,0 +1,10 @@
+#创建本地key，邮箱为自己的注册邮箱，一路默认回车，在./ssh文件夹下复制id_rsa.pub内的全部内容。
+ssh-keygen -t rsa -C "your_email@youremail.com"
+cat id_rsa.pub
+
+#输入以下命令，continue，You’ve successfully authenticated, but GitHub does not provide shell ac#cess则连接成功。
+ssh -T git@github.com
+
+#设置用户名和邮箱
+git config --global user.name "your name"
+git config --global user.email "your_email@youremail.com"
