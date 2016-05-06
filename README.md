@@ -14,3 +14,10 @@ cp doc/NERD_tree.txt ~/.vim/doc/
 #add below to /etc/vim/vimrc
 " NERDTree  
 map <F10> :NERDTreeToggle<CR>  
+
+#setting vim
+set nu!			#显示行号  
+synax on		#开启语法高亮  
+set tabstop=4	#设置tab数量  
+set ai!			#设置自动换行对齐  
+highlight Comment ctermfg=blue guifg=blue	#设置注释颜色
