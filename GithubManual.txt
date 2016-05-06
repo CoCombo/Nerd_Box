@@ -5,6 +5,9 @@ cat id_rsa.pub
 #输入以下命令，continue，You’ve successfully authenticated, but GitHub does not provide shell ac#cess则连接成功。
 ssh -T git@github.com
 
+#安装git
+sudo apt-get install git
+
 #设置用户名和邮箱
 git config --global user.name "your name"
 git config --global user.email "your_email@youremail.com"
