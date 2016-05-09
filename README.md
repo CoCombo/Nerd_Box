@@ -20,7 +20,7 @@ set nu!										#显示行号
 syntax on									#开启语法高亮  
 set tabstop=4								#设置tab数量  
 set ai!										#设置自动换行对齐  
-highlight Comment ctermfg=blue guifg=blue	#设置注释颜色
+highlight Comment ctermfg=blue guifg=blue	#设置注释颜色  
 inoremap ( ()<ESC>i							#括号自动补全，[],{}....等类似  
 
 #ibus有些字打不了
