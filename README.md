@@ -29,8 +29,4 @@ sudo apt-get update
 取消简拼勾选
 ibus-daemon -d -x -r						#杀死ibus进程再重启  
 
-#python2和python3切换  
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 100  
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 150  
-切换回python2  
-sudo update-alternatives --config python 
+
