@@ -125,6 +125,8 @@ int main2(void)
 }
 */
 
+//注册终止程序，逆序输出
+/*
 void testFunc1(void)
 {
 	printf("fuck you.\n");
@@ -140,4 +142,33 @@ int main(void)
 	atexit(testFunc1);
 	atexit(testFunc2);
 	exit(0);
+}
+*/
+
+//守护进程,通过创建一个新的会话脱离当前终端实现
+int main(void)
+{
+	pid_t pid;
+
+	pid = fork();
+
+	if(pid == -1)
+		perror("fork error:");
+	if(pid > 0)
+		exit(0);
+	
+	//printf("pid: %d\n", getpid());
+	pid = setsid();
+	if(pid == -1)
+		perror("fork error:");
+	
+	
+	printf("pid: %d ---hello.\n", getpid());
+	while(1)
+		sleep(10);
+}
+
+int myDaemon(int nochdir, int noclose)
+{
+	
 }
