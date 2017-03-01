@@ -4,7 +4,7 @@ Call me Combo.
 I'm a Nerd-Gamer.  
 
 #vim NERDTree install:	
->wget http://www.vim.org/scripts/download_script.php?src_id=17123 -O nerdtree.zip   
+wget http://www.vim.org/scripts/download_script.php?src_id=17123 -O nerdtree.zip   
 unzip nerdtree.zip  
   
 >mkdir -p ~/.vim/{plugin,doc}  
