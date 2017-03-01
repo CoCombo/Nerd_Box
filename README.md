@@ -16,8 +16,8 @@ cp doc/NERD_tree.txt ~/.vim/doc/
 map <F10> :NERDTreeToggle<CR>  
 
 #setting vim
-set nu!										#显示行号  
-syntax on									#开启语法高亮  
+>set nu!										#显示行号  
+*syntax on									#开启语法高亮  
 set tabstop=4								#设置tab数量  
 set ai!										#设置自动换行对齐
 set mouse=a
