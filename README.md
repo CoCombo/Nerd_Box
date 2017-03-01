@@ -7,7 +7,7 @@ I'm a Nerd-Gamer.
 >wget http://www.vim.org/scripts/download_script.php?src_id=17123 -O nerdtree.zip   
 unzip nerdtree.zip  
   
-mkdir -p ~/.vim/{plugin,doc}  
+*mkdir -p ~/.vim/{plugin,doc}  
 
 cp plugin/NERD_tree.vim ~/.vim/plugin/  
 cp doc/NERD_tree.txt ~/.vim/doc/  
@@ -16,8 +16,8 @@ cp doc/NERD_tree.txt ~/.vim/doc/
 map <F10> :NERDTreeToggle<CR>  
 
 #setting vim
->set nu!										#显示行号  
-*syntax on									#开启语法高亮  
+>set nu!									#显示行号  
+syntax on									#开启语法高亮  
 set tabstop=4								#设置tab数量  
 set ai!										#设置自动换行对齐
 set mouse=a
