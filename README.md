@@ -9,6 +9,7 @@ unzip nerdtree.zip
   
 mkdir -p ~/.vim/{plugin,doc}  
 > adada
+
 cp plugin/NERD_tree.vim ~/.vim/plugin/  
 cp doc/NERD_tree.txt ~/.vim/doc/  
 #add below to /etc/vim/vimrc
