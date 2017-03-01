@@ -1,6 +1,6 @@
 # Nerd_Box
 > Welcome!  
-> Call me Combo.  
+Call me Combo.  
 I'm a Nerd-Gamer.  
 
 #vim NERDTree install
